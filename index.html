@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>9/80 Work Schedule Reference</title>
+      <!-- Latest compiled and minified CSS -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+      
+      <script src="calendar.js"></script>
+      
+      <style>
+         .col-centered{
+            float: none;
+            margin: 0 auto
+         }
+         .prev{
+            visibility: hidden !important;
+         }
+         .next{
+            visibility: hidden !important;
+         }
+         table.table-condensed{
+            border: 0.2em solid black;
+         }
+         div.datepicker.datepicker-inline{
+            margin: auto;
+         }
+         body{
+            background-image: url("background.jp");
+         }
+         .datepicker-switch{
+            cursor: default !important;
+         }
+         #yearForm{
+            margin-bottom: 0px !important;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h1 style="text-align: center">When Is My Off Friday?</h1>
+               <p style="text-align: center; font-weight: bold;">A 9/80 Work Schedule Reference</p>
+            </div>
+         </div>
+         <div class="row">
+            <form class="form-horizontal col-lg-6 col-lg-offset-3">
+               <div class="form-group" id="yearForm">
+                  <div class="row">
+                     <div class="col-lg-8 col-lg-offset-3">
+                        <label class="control-label col-lg-2" for="selectedYear">Year:</label>                                      
+                        <div class="input-group col-lg-5">
+                           <span class="input-group-btn">
+                              <button class="btn btn-default" id="decrementYear" disabled="disabled">
+                                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              </button> 
+                           </span>
+                           <input type="text" class="form-control" id="selectedYear" disabled="disabled" style="text-align:center">
+                           <span class="input-group-btn">
+                              <button class="btn btn-default" id="incrementYear">
+                                 <span class="glyphicon glyphicon-chevron-right"></span>
+                              </button> 
+                           </span>                           
+                        </div>
+                        <span class="help-block col-xs-12">Year selected cannot be in the past.</span>
+                     </div>                     
+                  </div>                             
+               </div>
+            </form>
+            <form class="form-horizontal col-lg-6 col-lg-offset-3">
+               <div class="form-group">
+                  <div class="row">
+                     <div class="checkbox col-lg-4 col-lg-offset-4">
+                        <label><input type="checkbox" value="" id="inverse">Inverse Off Fridays</label>
+                     </div>
+                  </div>
+               </div>    
+            </form>               
+         </div>
+         <div class="row">
+            <div id="calendar0"></div>
+            <div id="calendar1"></div>
+            <div id="calendar2"></div>
+            <div id="calendar3"></div>         
+            <div id="calendar4"></div>
+            <div id="calendar5"></div>
+            <div id="calendar6"></div>
+            <div id="calendar7"></div>           
+            <div id="calendar8"></div>
+            <div id="calendar9"></div>
+            <div id="calendar10"></div>
+            <div id="calendar11"></div>
+         </div>
+      </div>
+   </body>
+</html>
