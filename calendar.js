@@ -1,4 +1,4 @@
-var calendarClass = 'col-lg-3 col-md-3 col-sm-4 col-xs-12';
+var calendarClass = 'col-lg-3 col-md-3 col-sm-12 col-xs-12';
 var oneWeekInMilliseconds = 604800000;
 var twoWeeksInMilliseconds = 1209600000;
 var offFridayBase = new Date('01 Jan 2016');
