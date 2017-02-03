@@ -29,15 +29,19 @@
          div.datepicker.datepicker-inline{
             margin: auto;
          }
-         body{
-            background-image: url("background.jp");
-         }
          .datepicker-switch{
             cursor: default !important;
          }
          #yearForm{
             margin-bottom: 0px !important;
          }
+         @media (min-width: @screen-sm-min) {
+			.datepicker,
+			.table-condensed {
+			  width: 500px;
+			  height:500px;
+			}
+		 }
       </style>
    </head>
    <body>
