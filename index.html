@@ -13,6 +13,7 @@
       <script src="calendar.js"></script>
       
       <style>
+
          .col-centered{
             float: none;
             margin: 0 auto
@@ -38,13 +39,31 @@
          #yearForm{
             margin-bottom: 0px !important;
          }
+         h1 {
+             margin-left:50px;
+             font-family:'Raleway', 'sans-serif';
+         }
+
+         #about {
+             position: relative;
+             right:30px;
+             bottom: 30px;
+         }
+         .navbar {
+             height: 80px;
+         }
       </style>
    </head>
    <body>
+     <header>
+       <nav class="navbar navbar-default">
+           <h1>When Is My Off Friday?</h1>
+           <p style="text-align: right;"><a href="about.html" id="about">ABOUT</a></p>
+       </nav>
+     </header>
       <div class="container">
          <div class="row">
             <div class="col-xs-12">
-               <h1 style="text-align: center">When Is My Off Friday?</h1>
                <p style="text-align: center; font-weight: bold;">A 9/80 Work Schedule Reference</p>
             </div>
          </div>
